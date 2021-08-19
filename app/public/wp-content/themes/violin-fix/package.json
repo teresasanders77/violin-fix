@@ -1,15 +1,15 @@
 {
-    "name": "violin-fix",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "scss": "node-sass --watch style.scss -o syle.css"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "node-sass": "^6.0.1"
-    }
+  "name": "violin-fix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss/style.scss -o css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
 }
