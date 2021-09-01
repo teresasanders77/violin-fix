@@ -12,9 +12,7 @@ get_header();
   <div id="home_page_wrapper">
     <div class="entry-content">
       <h1>Welcome to the Premier Season!</h1>
-      <? if (get_field('video_embed_link')) {
-        echo do_shortcode(get_field('video_embed_link'));
-      } ?>
+      <?php the_content(); ?>
     </div><!-- .entry-content -->
   </div>
 

@@ -6,6 +6,8 @@
   box-shadow: 0px 40px 60px -20px rgba(0, 0, 0, 0.2); }
   #home_page_wrapper .entry-content h1 {
     font-size: 2em; }
+  #home_page_wrapper .entry-content .aiovg-player-container {
+    margin: 0 auto; }
 
 /* Portrait and Landscape */
 /* Portrait */
