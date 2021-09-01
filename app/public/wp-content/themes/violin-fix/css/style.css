@@ -27,7 +27,7 @@
 body {
   background: black; }
 
-h1 {
+h1, p, li {
   font-family: 'Times New Roman',serif;
   font-size: 2em;
   font-weight: bold;
