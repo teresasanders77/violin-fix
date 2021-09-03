@@ -27,13 +27,34 @@ add_action('wp_enqueue_scripts', 'enqueue_header_scripts');
   <!-- Logo here -->
 </header>
 
-<!-- <nav id=" menu" aria-hidden="true" aria-labelledby="menu-toggle" role="navigation">
-    <ul>
-      <li><a href="/">HOME</a></li>
-      <li><a href="/about">ABOUT</a></li>
-      <li><a href="/current-projects">CURRENT PROJECTS</a></li>
-      <li><a href="/contact">CONTACT</a></li>
-      <li><a href="/recommendations">RECOMMENDATIONS</a></li>
-      <li><a href="/bach-project">THE BACH PROJECT</a></li>
-    </ul>
-    </nav> -->
+<header class="header-area">
+  <!-- site-navbar start -->
+  <div class="navbar-area">
+    <div class="container">
+      <nav class="site-navbar">
+        <!-- site logo -->
+        <a href="#home" class="site-logo">logo</a>
+
+        <!-- site menu/nav -->
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">service</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+
+        <!-- nav-toggler for mobile version only -->
+        <button class="nav-toggler">
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </div><!-- navbar-area end -->
+
+  <div class="intro-area">
+    <div class="container">
+      <h2>Responsive Navbar with pure JavaScript</h2>
+      <p>Please resize your browser and see the result</p>
+    </div>
+  </div>
+</header>
