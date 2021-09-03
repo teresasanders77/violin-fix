@@ -43,10 +43,10 @@ add_action('wp_enqueue_scripts', 'enqueue_header_scripts');
   
   <div class="nav-links">
     <a href="/">Home</a>
-    <a href="/" target="_blank">Explore the Season</a>
-    <a href="/" target="_blank">This Month's Digital Concert</a>
-    <a href="/" target="_blank">Subscribe</a>
-    <a href="/" target="_blank">About the Performers</a>
-    <a href="/" target="_blank">Track My Progress</a>
+    <a href="/explore" target="_blank">Explore the Season</a>
+    <a href="/concert" target="_blank">This Month's Digital Concert</a>
+    <a href="/subscribe" target="_blank">Subscribe</a>
+    <a href="/about" target="_blank">About the Performers</a>
+    <a href="/tracking" target="_blank">Track My Progress</a>
   </div>
 </div>
