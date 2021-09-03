@@ -1,36 +1,34 @@
-<?php get_header(); ?>
+<?php
+/*  Template Name: Home  */
 
-<main role="main" aria-label="Content">
-  <!-- section -->
-  <section>
 
-    <h1 class="main-page-title"><?php the_title(); ?></h1>
+// pull the site URL for utilization in the page to prevent migration issues.
+$site_url = get_site_url();
+// utilize this if you need to enque scripts or specific styles.
+// Retrieve Header for site.
+get_header();
+?>
+<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <div id="home_page_wrapper">
+    <div class="entry-content">
+      <h1>Welcome to the Premier Season!</h1>
+      <?php the_content(); ?>
+      <div class="weekly-video-data">
+        <?php
+        /* ACF Section */
+        $composer = get_field('composer');
+        $performers = get_field('performers');
+        $piece = get_field('piece');
+        ?>
+        <p><strong>Composer: <?php echo $composer ?></strong></p>
+        <p><strong>Performers: <?php echo $performers ?></strong></p>
+        <p><strong>Piece: <?php echo $piece ?></strong></p>
+      </div>
+    </div><!-- .entry-content -->
+  </div>
 
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+</section><!-- #post-<?php the_ID(); ?> -->
 
-        <!-- article -->
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-          <?php the_content(); ?>
-
-        </article>
-        <!-- /article -->
-
-      <?php endwhile; ?>
-
-    <?php else : ?>
-
-      <!-- article -->
-      <article>
-
-        <h2><?php include("page.php"); ?></h2>
-
-      </article>
-      <!-- /article -->
-
-    <?php endif; ?>
-
-  </section>
-  <!-- /section -->
-</main>
-<?php get_footer(); ?>
+<?php
+get_footer();
+?>
