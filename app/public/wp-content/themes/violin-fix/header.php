@@ -7,8 +7,8 @@ $site_url = get_site_url();
 function enqueue_header_scripts()
 {
   // edit the stars below with your file name if you need JavaScript.
-//   wp_enqueue_script('script_handle', '/wp-content/themes/violin-fix/src/home.js', '0.0.1', false);
-
+  // wp_enqueue_script('script_handle', '/wp-content/themes/violin-fix/js/scripts.js', '0.0.1', false);
+  // wp_enqueue_script( 'script_handle', '/wp-content/themes/awmi-net-2018/jsDist/********.min.js', array('cashdomlibrary'), '0.0.1', false);
 }
 add_action('wp_enqueue_scripts', 'enqueue_header_scripts');
 
@@ -23,31 +23,30 @@ add_action('wp_enqueue_scripts', 'enqueue_header_scripts');
 </head>
 
 <header class="banner current">
-  <button id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu""></button>
   <!-- Logo here -->
 </header>
 
-<header class="header-area">
-  <!-- site-navbar start -->
-  <div class="navbar-area">
-    <div class="container">
-      <nav class="site-navbar">
-        <!-- site logo -->
-        <a href="#home" class="site-logo">logo</a>
-
-        <!-- site menu/nav -->
-        <ul>
-          <li><a href="#">home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">service</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-
-        <!-- nav-toggler for mobile version only -->
-        <button class="nav-toggler">
-          <span></span>
-        </button>
-      </nav>
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      Violin Fix
     </div>
-  </div><!-- navbar-area end -->
-</header>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/" target="_blank">Explore the Season</a>
+    <a href="/" target="_blank">This Month's Digital Concert</a>
+    <a href="/" target="_blank">Subscribe</a>
+    <a href="/" target="_blank">About the Performers</a>
+    <a href="/" target="_blank">Track My Progress</a>
+  </div>
+</div>
