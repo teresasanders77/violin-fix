@@ -11,6 +11,8 @@
   #home_page_wrapper .entry-content .aiovg-player iframe,
   #home_page_wrapper .entry-content .aiovg-player .video-js {
     z-index: -1; }
+  #home_page_wrapper .entry-content .weekly-video-data {
+    font-size: 55%; }
 
 /* Portrait and Landscape */
 /* Portrait */
@@ -46,7 +48,7 @@ li {
 .nav {
   height: 50px;
   width: 100%;
-  background-color: #4d4d4d;
+  background: linear-gradient(to bottom, #cb9b51, transparent);
   position: relative; }
 
 .nav > .nav-header {
@@ -101,7 +103,7 @@ li {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #333;
+    background-color: black;
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
