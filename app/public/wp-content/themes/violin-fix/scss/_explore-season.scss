@@ -43,9 +43,13 @@ $fifthCard: #724e94;
             .previous {
                 position: fixed;
                 left: 50%;
-                top: 0;
+                top: 10px;
                 transform: translate(-50%, 0);
                 margin: 0 auto;
+                text-align: center;
+            }
+            h1 {
+                color: Gold;
                 text-align: center;
             }
             .next {

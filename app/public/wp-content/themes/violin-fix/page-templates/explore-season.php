@@ -20,6 +20,7 @@ get_header();
       <?php the_content(); ?>
       <div class="card first">
         <div class="previous"></div>
+        <h1>BEETHOVEN VIOLIN SONATAS</h1>
         <div class="next"></div>
       </div>
       <div class="card second">
