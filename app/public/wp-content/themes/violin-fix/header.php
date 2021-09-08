@@ -30,7 +30,7 @@ add_action('wp_enqueue_scripts', 'enqueue_header_scripts');
   <input type="checkbox" id="nav-check">
   <div class="nav-header">
     <div class="nav-title">
-      Violin Fix
+      <a href="/"><img src="/wp-content/uploads/2021/09/violin-fix-logo-small.png" alt="violin-fix logo" /></a>
     </div>
   </div>
   <div class="nav-btn">
@@ -43,10 +43,10 @@ add_action('wp_enqueue_scripts', 'enqueue_header_scripts');
   
   <div class="nav-links">
     <a href="/">Home</a>
-    <a href="/explore" target="_blank">Explore the Season</a>
-    <a href="/concert" target="_blank">This Month's Digital Concert</a>
-    <a href="/subscribe" target="_blank">Subscribe</a>
-    <a href="/about" target="_blank">About the Performers</a>
-    <a href="/tracking" target="_blank">Track My Progress</a>
+    <a href="/explore">Explore the Season</a>
+    <a href="/concert">This Month's Digital Concert</a>
+    <a href="/subscribe">Subscribe</a>
+    <a href="/about">About the Performers</a>
+    <a href="/tracking">Track My Progress</a>
   </div>
 </div>

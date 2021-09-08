@@ -3,10 +3,11 @@ const path = require("path");
 module.exports = {
     entry: {
         home: "./src/home.js",
+        "explore-season": "./src/explore-season.js",
     },
     output: {
         path: path.resolve(__dirname, "./build"),
-        filename: "siteWide.min.js",
+        filename: "[name].min.js",
     },
     module: {
         rules: [

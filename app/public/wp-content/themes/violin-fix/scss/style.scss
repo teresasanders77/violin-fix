@@ -49,6 +49,9 @@ li {
     font-size: 22px;
     color: #fff;
     padding: 10px 10px 10px 10px;
+    img {
+        width: 55%;
+    }
 }
 
 .nav > .nav-btn {
@@ -75,7 +78,13 @@ li {
 .nav > #nav-check {
     display: none;
 }
-
+@media (min-width: 1200px) {
+    .nav > .nav-header > .nav-title {
+        img {
+            width: 100%;
+        }
+    }
+}
 @media (max-width: 1279px) {
     .nav > .nav-btn {
         display: inline-block;
