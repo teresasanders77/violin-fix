@@ -24,8 +24,14 @@ $fifthCard: #724e94;
             width: 600px;
             height: 300px;
             transition: transform 0.3s ease-out;
-            box-shadow: 0 0 2px 0 #000;
             border-radius: 8px;
+            background: black;
+            margin: 10px;
+            border-radius: 5px;
+            transition: 0.5s;
+            box-shadow: 0px 0px 20px gold;
+            transition: 0.3s;
+            color: white;
 
             @media (max-width: 700px) {
                 width: 80%;
@@ -58,28 +64,10 @@ $fifthCard: #724e94;
             justify-content: center;
             align-items: center;
             font-family: sans-serif;
-            color: $backgroundColor;
-            background-color: $firstCard;
 
             @media (max-width: 700px) {
                 font-size: 1rem;
             }
-        }
-
-        .second {
-            background-color: $secondCard;
-        }
-
-        .third {
-            background-color: $thirdCard;
-        }
-
-        .fourth {
-            background-color: $fourthCard;
-        }
-
-        .fifth {
-            background-color: $fifthCard;
         }
     }
 }
