@@ -29,58 +29,64 @@
   #home_page_wrapper .entry-content h1 {
     font-size: 4.4em; } }
 
-#explore_season_page_wrapper .entry-content * {
-  margin: 0;
-  padding: 0; }
-
-#explore_season_page_wrapper .entry-content body {
+#explore_season_page_wrapper .entry-content {
   display: flex;
   position: fixed;
   width: 100%;
   height: 100%;
   justify-content: center;
-  align-items: center;
-  background-color: #21252e; }
-
-#explore_season_page_wrapper .entry-content .card {
-  display: flex;
-  position: fixed;
-  width: 600px;
-  height: 300px;
-  transition: transform 0.3s ease-out;
-  box-shadow: 0 0 2px 0 #000;
-  border-radius: 8px; }
-  @media (max-width: 700px) {
-    #explore_season_page_wrapper .entry-content .card {
-      width: 80%; } }
-  @media (max-height: 400px) {
-    #explore_season_page_wrapper .entry-content .card {
-      height: 40%; } }
-
-#explore_season_page_wrapper .entry-content .first {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  font-family: sans-serif;
-  color: #21252e;
-  background-color: #ffa719; }
-  @media (max-width: 700px) {
-    #explore_season_page_wrapper .entry-content .first {
-      font-size: 1rem; } }
-
-#explore_season_page_wrapper .entry-content .second {
-  background-color: #e56660; }
-
-#explore_season_page_wrapper .entry-content .third {
-  background-color: #b94a53; }
-
-#explore_season_page_wrapper .entry-content .fourth {
-  background-color: #4b345e; }
-
-#explore_season_page_wrapper .entry-content .fifth {
-  background-color: #724e94; }
+  align-items: center; }
+  #explore_season_page_wrapper .entry-content * {
+    margin: 0;
+    padding: 0; }
+  #explore_season_page_wrapper .entry-content .card {
+    display: flex;
+    font-size: 1.5em;
+    position: fixed;
+    width: 600px;
+    height: 300px;
+    transition: transform 0.3s ease-out;
+    box-shadow: 0 0 2px 0 #000;
+    border-radius: 8px; }
+    @media (max-width: 700px) {
+      #explore_season_page_wrapper .entry-content .card {
+        width: 80%; } }
+    @media (max-height: 400px) {
+      #explore_season_page_wrapper .entry-content .card {
+        height: 40%; } }
+    #explore_season_page_wrapper .entry-content .card .previous {
+      position: fixed;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 0);
+      margin: 0 auto;
+      text-align: center; }
+    #explore_season_page_wrapper .entry-content .card .next {
+      position: fixed;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, -30%);
+      margin: 0 auto;
+      text-align: center; }
+  #explore_season_page_wrapper .entry-content .first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: #21252e;
+    background-color: #ffa719; }
+    @media (max-width: 700px) {
+      #explore_season_page_wrapper .entry-content .first {
+        font-size: 1rem; } }
+  #explore_season_page_wrapper .entry-content .second {
+    background-color: #e56660; }
+  #explore_season_page_wrapper .entry-content .third {
+    background-color: #b94a53; }
+  #explore_season_page_wrapper .entry-content .fourth {
+    background-color: #4b345e; }
+  #explore_season_page_wrapper .entry-content .fifth {
+    background-color: #724e94; }
 
 body {
   background: black; }

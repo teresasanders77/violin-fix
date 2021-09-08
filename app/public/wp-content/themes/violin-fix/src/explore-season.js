@@ -37,6 +37,11 @@ function cardSwitching(e) {
         previousSibling,
         scrolling = "";
 
+    var clickIcon = e.path[0];
+    // if (clickIcon.classList.contains("fa-arrow-alt-circle-down")) {
+    //     console.log("true");
+    // }
+
     /* return when you scroll during the animation of a card */
     if (isMoving) return;
 
@@ -48,16 +53,25 @@ function cardSwitching(e) {
             parseInt(index.style.zIndex) === CARD_ARRAY.length
         ) {
             /*switch the rearmost card */
-            if (e.deltaY < 0 || e.keyCode === 38) {
+            if (e.deltaY < 0 || e.keyCode === 38 || clickIcon.classList.contains("fa-arrow-alt-circle-up")) {
                 //deltaY < 0 -> scrolling up
                 previousSibling = index.previousElementSibling;
                 if (previousSibling === null) previousSibling = last_element;
             }
 
             animationObject =
-                e.deltaY < 0 || e.keyCode === 38 ? previousSibling : e.deltaY > 0 || e.keyCode === 40 ? index : "";
+                e.deltaY < 0 || e.keyCode === 38 || clickIcon.classList.contains("fa-arrow-alt-circle-up")
+                    ? previousSibling
+                    : e.deltaY > 0 || e.keyCode === 40 || clickIcon.classList.contains("fa-arrow-alt-circle-down")
+                    ? index
+                    : "";
             animationObject.style.transform = `translate(0px, -${CARD_SWITCH_RANGE})`;
-            scrolling = e.deltaY < 0 || e.keyCode === 38 ? "up" : e.deltaY > 0 || e.keyCode === 40 ? "down" : "";
+            scrolling =
+                e.deltaY < 0 || e.keyCode === 38 || clickIcon.classList.contains("fa-arrow-alt-circle-up")
+                    ? "up"
+                    : e.deltaY > 0 || e.keyCode === 40 || clickIcon.classList.contains("fa-arrow-alt-circle-down")
+                    ? "down"
+                    : "";
             isMoving = true;
         }
     }
@@ -91,3 +105,39 @@ function offsetSwitch(scrolling) {
         index.addEventListener("transitionend", () => (isMoving = false), { once: true });
     }
 }
+
+window.onload = function addStyles() {
+    var cardStackPrevious = document.querySelectorAll(".previous");
+    for (var i = 0; i < cardStackPrevious.length; i++) {
+        // PREVIOUS CARD TEXT AND FUNCTIONALITY
+        var prevIcon = document.createElement("div");
+        prevIcon.innerHTML = '<i class="far fa-arrow-alt-circle-up"></i>';
+        cardStackPrevious[i].appendChild(prevIcon);
+
+        var prevText = document.createElement("h6");
+        prevText.innerHTML = "Previous Card";
+        prevText.classList.add("previous-card-text");
+        cardStackPrevious[i].appendChild(prevText);
+
+        cardStackPrevious[i].addEventListener("click", function (e) {
+            cardSwitching(e);
+        });
+    }
+
+    var cardStackNext = document.querySelectorAll(".next");
+    for (var i = 0; i < cardStackNext.length; i++) {
+        // NEXT CARD TEXT AND FUNCTIONALITY
+        var nextText = document.createElement("h6");
+        nextText.innerHTML = "Next Card";
+        nextText.classList.add("next-card-text");
+        cardStackNext[i].appendChild(nextText);
+
+        var nextIcon = document.createElement("div");
+        nextIcon.innerHTML = '<i class="far fa-arrow-alt-circle-down"></i>';
+        cardStackNext[i].appendChild(nextIcon);
+
+        cardStackNext[i].addEventListener("click", function (e) {
+            cardSwitching(e);
+        });
+    }
+};
