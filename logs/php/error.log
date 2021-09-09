@@ -107,3 +107,288 @@ Stack trace:
 [19-Aug-2021 20:04:18 UTC] PHP  14. do_action() C:\Users\teres\Local Sites\violinfix\app\public\wp-includes\script-loader.php:2083
 [19-Aug-2021 20:04:18 UTC] PHP  15. WP_Hook->do_action() C:\Users\teres\Local Sites\violinfix\app\public\wp-includes\plugin.php:470
 [19-Aug-2021 20:04:18 UTC] PHP  16. WP_Hook->apply_filters() C:\Users\teres\Local Sites\violinfix\app\public\wp-includes\class-wp-hook.php:327
+[09-Sep-2021 20:17:40 UTC] PHP Warning:  Use of undefined constant jquery - assumed 'jquery' (this will throw an Error in a future version of PHP) in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 10
+[09-Sep-2021 20:17:40 UTC] PHP Stack trace:
+[09-Sep-2021 20:17:40 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[09-Sep-2021 20:17:40 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[09-Sep-2021 20:17:40 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[09-Sep-2021 20:17:40 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[09-Sep-2021 20:17:40 UTC] PHP   5. get_header() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:15
+[09-Sep-2021 20:17:40 UTC] PHP   6. locate_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:48
+[09-Sep-2021 20:17:40 UTC] PHP   7. load_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:716
+[09-Sep-2021 20:17:40 UTC] PHP   8. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:770
+[09-Sep-2021 20:17:40 UTC] PHP   9. wp_head() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/header.php:21
+[09-Sep-2021 20:17:40 UTC] PHP  10. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:3015
+[09-Sep-2021 20:17:40 UTC] PHP  11. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:17:40 UTC] PHP  12. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:17:40 UTC] PHP  13. wp_enqueue_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:17:40 UTC] PHP  14. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/script-loader.php:2083
+[09-Sep-2021 20:17:40 UTC] PHP  15. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:17:40 UTC] PHP  16. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:17:40 UTC] PHP  17. enqueue_explore_season_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:19:24 UTC] PHP Warning:  Use of undefined constant jquery - assumed 'jquery' (this will throw an Error in a future version of PHP) in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 10
+[09-Sep-2021 20:19:24 UTC] PHP Stack trace:
+[09-Sep-2021 20:19:24 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[09-Sep-2021 20:19:24 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[09-Sep-2021 20:19:24 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[09-Sep-2021 20:19:24 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[09-Sep-2021 20:19:24 UTC] PHP   5. get_header() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:15
+[09-Sep-2021 20:19:24 UTC] PHP   6. locate_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:48
+[09-Sep-2021 20:19:24 UTC] PHP   7. load_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:716
+[09-Sep-2021 20:19:24 UTC] PHP   8. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:770
+[09-Sep-2021 20:19:24 UTC] PHP   9. wp_head() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/header.php:21
+[09-Sep-2021 20:19:24 UTC] PHP  10. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:3015
+[09-Sep-2021 20:19:24 UTC] PHP  11. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:19:24 UTC] PHP  12. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:19:24 UTC] PHP  13. wp_enqueue_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:19:24 UTC] PHP  14. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/script-loader.php:2083
+[09-Sep-2021 20:19:24 UTC] PHP  15. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:19:24 UTC] PHP  16. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:19:24 UTC] PHP  17. enqueue_explore_season_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:19:46 UTC] PHP Warning:  Use of undefined constant jquery - assumed 'jquery' (this will throw an Error in a future version of PHP) in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 10
+[09-Sep-2021 20:19:46 UTC] PHP Stack trace:
+[09-Sep-2021 20:19:46 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[09-Sep-2021 20:19:46 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[09-Sep-2021 20:19:46 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[09-Sep-2021 20:19:46 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[09-Sep-2021 20:19:46 UTC] PHP   5. get_header() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:15
+[09-Sep-2021 20:19:46 UTC] PHP   6. locate_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:48
+[09-Sep-2021 20:19:46 UTC] PHP   7. load_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:716
+[09-Sep-2021 20:19:46 UTC] PHP   8. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:770
+[09-Sep-2021 20:19:46 UTC] PHP   9. wp_head() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/header.php:21
+[09-Sep-2021 20:19:46 UTC] PHP  10. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:3015
+[09-Sep-2021 20:19:46 UTC] PHP  11. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:19:46 UTC] PHP  12. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:19:46 UTC] PHP  13. wp_enqueue_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:19:46 UTC] PHP  14. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/script-loader.php:2083
+[09-Sep-2021 20:19:46 UTC] PHP  15. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:19:46 UTC] PHP  16. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:19:46 UTC] PHP  17. enqueue_explore_season_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:26:31 UTC] PHP Warning:  Use of undefined constant jquery - assumed 'jquery' (this will throw an Error in a future version of PHP) in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 10
+[09-Sep-2021 20:26:31 UTC] PHP Stack trace:
+[09-Sep-2021 20:26:31 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[09-Sep-2021 20:26:31 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[09-Sep-2021 20:26:31 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[09-Sep-2021 20:26:31 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[09-Sep-2021 20:26:31 UTC] PHP   5. get_header() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:15
+[09-Sep-2021 20:26:31 UTC] PHP   6. locate_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:48
+[09-Sep-2021 20:26:31 UTC] PHP   7. load_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:716
+[09-Sep-2021 20:26:31 UTC] PHP   8. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:770
+[09-Sep-2021 20:26:31 UTC] PHP   9. wp_head() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/header.php:21
+[09-Sep-2021 20:26:31 UTC] PHP  10. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:3015
+[09-Sep-2021 20:26:31 UTC] PHP  11. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:26:31 UTC] PHP  12. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:26:31 UTC] PHP  13. wp_enqueue_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:26:31 UTC] PHP  14. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/script-loader.php:2083
+[09-Sep-2021 20:26:31 UTC] PHP  15. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:26:31 UTC] PHP  16. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:26:31 UTC] PHP  17. enqueue_explore_season_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:27:50 UTC] PHP Warning:  Use of undefined constant jquery - assumed 'jquery' (this will throw an Error in a future version of PHP) in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 10
+[09-Sep-2021 20:27:50 UTC] PHP Stack trace:
+[09-Sep-2021 20:27:50 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[09-Sep-2021 20:27:50 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[09-Sep-2021 20:27:50 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[09-Sep-2021 20:27:50 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[09-Sep-2021 20:27:50 UTC] PHP   5. get_header() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:15
+[09-Sep-2021 20:27:50 UTC] PHP   6. locate_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:48
+[09-Sep-2021 20:27:50 UTC] PHP   7. load_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:716
+[09-Sep-2021 20:27:50 UTC] PHP   8. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:770
+[09-Sep-2021 20:27:50 UTC] PHP   9. wp_head() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/header.php:21
+[09-Sep-2021 20:27:50 UTC] PHP  10. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:3015
+[09-Sep-2021 20:27:50 UTC] PHP  11. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:27:50 UTC] PHP  12. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:27:50 UTC] PHP  13. wp_enqueue_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:27:50 UTC] PHP  14. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/script-loader.php:2083
+[09-Sep-2021 20:27:50 UTC] PHP  15. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:27:50 UTC] PHP  16. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:27:50 UTC] PHP  17. enqueue_explore_season_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:28:02 UTC] PHP Warning:  Use of undefined constant jquery - assumed 'jquery' (this will throw an Error in a future version of PHP) in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 10
+[09-Sep-2021 20:28:02 UTC] PHP Stack trace:
+[09-Sep-2021 20:28:02 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[09-Sep-2021 20:28:02 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[09-Sep-2021 20:28:02 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[09-Sep-2021 20:28:02 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[09-Sep-2021 20:28:02 UTC] PHP   5. get_header() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:15
+[09-Sep-2021 20:28:02 UTC] PHP   6. locate_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:48
+[09-Sep-2021 20:28:02 UTC] PHP   7. load_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:716
+[09-Sep-2021 20:28:02 UTC] PHP   8. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:770
+[09-Sep-2021 20:28:02 UTC] PHP   9. wp_head() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/header.php:21
+[09-Sep-2021 20:28:02 UTC] PHP  10. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:3015
+[09-Sep-2021 20:28:02 UTC] PHP  11. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:28:02 UTC] PHP  12. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:28:02 UTC] PHP  13. wp_enqueue_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:28:02 UTC] PHP  14. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/script-loader.php:2083
+[09-Sep-2021 20:28:02 UTC] PHP  15. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:28:02 UTC] PHP  16. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:28:02 UTC] PHP  17. enqueue_explore_season_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:28:47 UTC] PHP Warning:  Use of undefined constant jquery - assumed 'jquery' (this will throw an Error in a future version of PHP) in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 10
+[09-Sep-2021 20:28:47 UTC] PHP Stack trace:
+[09-Sep-2021 20:28:47 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[09-Sep-2021 20:28:47 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[09-Sep-2021 20:28:47 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[09-Sep-2021 20:28:47 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[09-Sep-2021 20:28:47 UTC] PHP   5. get_header() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:15
+[09-Sep-2021 20:28:47 UTC] PHP   6. locate_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:48
+[09-Sep-2021 20:28:47 UTC] PHP   7. load_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:716
+[09-Sep-2021 20:28:47 UTC] PHP   8. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:770
+[09-Sep-2021 20:28:47 UTC] PHP   9. wp_head() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/header.php:21
+[09-Sep-2021 20:28:47 UTC] PHP  10. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:3015
+[09-Sep-2021 20:28:47 UTC] PHP  11. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:28:47 UTC] PHP  12. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:28:47 UTC] PHP  13. wp_enqueue_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:28:47 UTC] PHP  14. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/script-loader.php:2083
+[09-Sep-2021 20:28:47 UTC] PHP  15. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:28:47 UTC] PHP  16. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:28:47 UTC] PHP  17. enqueue_explore_season_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:29:58 UTC] PHP Warning:  Use of undefined constant jquery - assumed 'jquery' (this will throw an Error in a future version of PHP) in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 10
+[09-Sep-2021 20:29:58 UTC] PHP Stack trace:
+[09-Sep-2021 20:29:58 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[09-Sep-2021 20:29:58 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[09-Sep-2021 20:29:58 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[09-Sep-2021 20:29:58 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[09-Sep-2021 20:29:58 UTC] PHP   5. get_header() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:15
+[09-Sep-2021 20:29:58 UTC] PHP   6. locate_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:48
+[09-Sep-2021 20:29:58 UTC] PHP   7. load_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:716
+[09-Sep-2021 20:29:58 UTC] PHP   8. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:770
+[09-Sep-2021 20:29:58 UTC] PHP   9. wp_head() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/header.php:21
+[09-Sep-2021 20:29:58 UTC] PHP  10. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:3015
+[09-Sep-2021 20:29:58 UTC] PHP  11. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:29:58 UTC] PHP  12. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:29:58 UTC] PHP  13. wp_enqueue_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:29:58 UTC] PHP  14. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/script-loader.php:2083
+[09-Sep-2021 20:29:58 UTC] PHP  15. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:29:58 UTC] PHP  16. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:29:58 UTC] PHP  17. enqueue_explore_season_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:31:09 UTC] PHP Warning:  Use of undefined constant jquery - assumed 'jquery' (this will throw an Error in a future version of PHP) in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 10
+[09-Sep-2021 20:31:09 UTC] PHP Stack trace:
+[09-Sep-2021 20:31:09 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[09-Sep-2021 20:31:09 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[09-Sep-2021 20:31:09 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[09-Sep-2021 20:31:09 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[09-Sep-2021 20:31:09 UTC] PHP   5. get_header() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:15
+[09-Sep-2021 20:31:09 UTC] PHP   6. locate_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:48
+[09-Sep-2021 20:31:09 UTC] PHP   7. load_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:716
+[09-Sep-2021 20:31:09 UTC] PHP   8. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:770
+[09-Sep-2021 20:31:09 UTC] PHP   9. wp_head() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/header.php:21
+[09-Sep-2021 20:31:09 UTC] PHP  10. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:3015
+[09-Sep-2021 20:31:09 UTC] PHP  11. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:31:09 UTC] PHP  12. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:31:09 UTC] PHP  13. wp_enqueue_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:31:09 UTC] PHP  14. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/script-loader.php:2083
+[09-Sep-2021 20:31:09 UTC] PHP  15. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:31:09 UTC] PHP  16. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:31:09 UTC] PHP  17. enqueue_explore_season_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:31:52 UTC] PHP Warning:  Use of undefined constant jquery - assumed 'jquery' (this will throw an Error in a future version of PHP) in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 10
+[09-Sep-2021 20:31:52 UTC] PHP Stack trace:
+[09-Sep-2021 20:31:52 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[09-Sep-2021 20:31:52 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[09-Sep-2021 20:31:52 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[09-Sep-2021 20:31:52 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[09-Sep-2021 20:31:52 UTC] PHP   5. get_header() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:15
+[09-Sep-2021 20:31:52 UTC] PHP   6. locate_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:48
+[09-Sep-2021 20:31:52 UTC] PHP   7. load_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:716
+[09-Sep-2021 20:31:52 UTC] PHP   8. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:770
+[09-Sep-2021 20:31:52 UTC] PHP   9. wp_head() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/header.php:21
+[09-Sep-2021 20:31:52 UTC] PHP  10. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:3015
+[09-Sep-2021 20:31:52 UTC] PHP  11. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:31:52 UTC] PHP  12. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:31:52 UTC] PHP  13. wp_enqueue_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:31:52 UTC] PHP  14. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/script-loader.php:2083
+[09-Sep-2021 20:31:52 UTC] PHP  15. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:31:52 UTC] PHP  16. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:31:52 UTC] PHP  17. enqueue_explore_season_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:32:28 UTC] PHP Warning:  Use of undefined constant jquery - assumed 'jquery' (this will throw an Error in a future version of PHP) in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 10
+[09-Sep-2021 20:32:28 UTC] PHP Stack trace:
+[09-Sep-2021 20:32:28 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[09-Sep-2021 20:32:28 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[09-Sep-2021 20:32:28 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[09-Sep-2021 20:32:28 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[09-Sep-2021 20:32:28 UTC] PHP   5. get_header() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:15
+[09-Sep-2021 20:32:28 UTC] PHP   6. locate_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:48
+[09-Sep-2021 20:32:28 UTC] PHP   7. load_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:716
+[09-Sep-2021 20:32:28 UTC] PHP   8. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:770
+[09-Sep-2021 20:32:28 UTC] PHP   9. wp_head() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/header.php:21
+[09-Sep-2021 20:32:28 UTC] PHP  10. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:3015
+[09-Sep-2021 20:32:28 UTC] PHP  11. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:32:28 UTC] PHP  12. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:32:28 UTC] PHP  13. wp_enqueue_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:32:28 UTC] PHP  14. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/script-loader.php:2083
+[09-Sep-2021 20:32:28 UTC] PHP  15. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:32:28 UTC] PHP  16. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:32:28 UTC] PHP  17. enqueue_explore_season_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:37:53 UTC] PHP Warning:  Use of undefined constant jquery - assumed 'jquery' (this will throw an Error in a future version of PHP) in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 10
+[09-Sep-2021 20:37:53 UTC] PHP Stack trace:
+[09-Sep-2021 20:37:53 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[09-Sep-2021 20:37:53 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[09-Sep-2021 20:37:53 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[09-Sep-2021 20:37:53 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[09-Sep-2021 20:37:53 UTC] PHP   5. get_header() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:15
+[09-Sep-2021 20:37:53 UTC] PHP   6. locate_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:48
+[09-Sep-2021 20:37:53 UTC] PHP   7. load_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:716
+[09-Sep-2021 20:37:53 UTC] PHP   8. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:770
+[09-Sep-2021 20:37:53 UTC] PHP   9. wp_head() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/header.php:21
+[09-Sep-2021 20:37:53 UTC] PHP  10. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:3015
+[09-Sep-2021 20:37:53 UTC] PHP  11. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:37:53 UTC] PHP  12. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:37:53 UTC] PHP  13. wp_enqueue_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:37:53 UTC] PHP  14. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/script-loader.php:2083
+[09-Sep-2021 20:37:53 UTC] PHP  15. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:37:53 UTC] PHP  16. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:37:53 UTC] PHP  17. enqueue_explore_season_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:38:18 UTC] PHP Warning:  Use of undefined constant jquery - assumed 'jquery' (this will throw an Error in a future version of PHP) in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 10
+[09-Sep-2021 20:38:18 UTC] PHP Stack trace:
+[09-Sep-2021 20:38:18 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[09-Sep-2021 20:38:18 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[09-Sep-2021 20:38:18 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[09-Sep-2021 20:38:18 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[09-Sep-2021 20:38:18 UTC] PHP   5. get_header() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:15
+[09-Sep-2021 20:38:18 UTC] PHP   6. locate_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:48
+[09-Sep-2021 20:38:18 UTC] PHP   7. load_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:716
+[09-Sep-2021 20:38:18 UTC] PHP   8. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:770
+[09-Sep-2021 20:38:18 UTC] PHP   9. wp_head() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/header.php:21
+[09-Sep-2021 20:38:18 UTC] PHP  10. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:3015
+[09-Sep-2021 20:38:18 UTC] PHP  11. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:38:18 UTC] PHP  12. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:38:18 UTC] PHP  13. wp_enqueue_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:38:18 UTC] PHP  14. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/script-loader.php:2083
+[09-Sep-2021 20:38:18 UTC] PHP  15. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:38:18 UTC] PHP  16. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:38:18 UTC] PHP  17. enqueue_explore_season_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:38:35 UTC] PHP Warning:  Use of undefined constant jquery - assumed 'jquery' (this will throw an Error in a future version of PHP) in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 10
+[09-Sep-2021 20:38:35 UTC] PHP Stack trace:
+[09-Sep-2021 20:38:35 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[09-Sep-2021 20:38:35 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[09-Sep-2021 20:38:35 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[09-Sep-2021 20:38:35 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[09-Sep-2021 20:38:35 UTC] PHP   5. get_header() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:15
+[09-Sep-2021 20:38:35 UTC] PHP   6. locate_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:48
+[09-Sep-2021 20:38:35 UTC] PHP   7. load_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:716
+[09-Sep-2021 20:38:35 UTC] PHP   8. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:770
+[09-Sep-2021 20:38:35 UTC] PHP   9. wp_head() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/header.php:21
+[09-Sep-2021 20:38:35 UTC] PHP  10. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:3015
+[09-Sep-2021 20:38:35 UTC] PHP  11. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:38:35 UTC] PHP  12. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:38:35 UTC] PHP  13. wp_enqueue_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:38:35 UTC] PHP  14. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/script-loader.php:2083
+[09-Sep-2021 20:38:35 UTC] PHP  15. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:38:35 UTC] PHP  16. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:38:35 UTC] PHP  17. enqueue_explore_season_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:38:42 UTC] PHP Warning:  Use of undefined constant jquery - assumed 'jquery' (this will throw an Error in a future version of PHP) in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 10
+[09-Sep-2021 20:38:42 UTC] PHP Stack trace:
+[09-Sep-2021 20:38:42 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[09-Sep-2021 20:38:42 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[09-Sep-2021 20:38:42 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[09-Sep-2021 20:38:42 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[09-Sep-2021 20:38:42 UTC] PHP   5. get_header() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:15
+[09-Sep-2021 20:38:42 UTC] PHP   6. locate_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:48
+[09-Sep-2021 20:38:42 UTC] PHP   7. load_template() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:716
+[09-Sep-2021 20:38:42 UTC] PHP   8. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template.php:770
+[09-Sep-2021 20:38:42 UTC] PHP   9. wp_head() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/header.php:21
+[09-Sep-2021 20:38:42 UTC] PHP  10. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/general-template.php:3015
+[09-Sep-2021 20:38:42 UTC] PHP  11. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:38:42 UTC] PHP  12. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:38:42 UTC] PHP  13. wp_enqueue_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[09-Sep-2021 20:38:42 UTC] PHP  14. do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/script-loader.php:2083
+[09-Sep-2021 20:38:42 UTC] PHP  15. WP_Hook->do_action() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:470
+[09-Sep-2021 20:38:42 UTC] PHP  16. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:327
+[09-Sep-2021 20:38:42 UTC] PHP  17. enqueue_explore_season_scripts() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303

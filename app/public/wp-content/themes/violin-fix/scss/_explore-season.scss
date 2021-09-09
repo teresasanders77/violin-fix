@@ -11,16 +11,14 @@ $fifthCard: #724e94;
             padding: 0;
         }
         display: flex;
-        position: fixed;
+        position: absolute;
         width: 100%;
         height: 100%;
-        justify-content: center;
-        align-items: center;
-
+        margin-top: 30%;
         .card {
             display: flex;
             font-size: 1.5em;
-            position: fixed;
+            position: absolute;
             width: 600px;
             height: 300px;
             transition: transform 0.3s ease-out;
@@ -72,6 +70,114 @@ $fifthCard: #724e94;
             @media (max-width: 700px) {
                 font-size: 1rem;
             }
+        }
+    }
+    .spacer {
+        padding: 100%;
+    }
+
+    .EXE_NAV {
+        text-align: center;
+    }
+    .EXE_NAV nav {
+        width: 100%;
+        padding-top: 0.5rem;
+        background: #fff;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 3.5rem;
+        z-index: 10;
+    }
+    .EXE_NAV nav ul {
+        list-style: none;
+        width: inherit;
+        margin: 0;
+    }
+    .EXE_NAV ul li {
+        display: inline-block;
+        padding: 0.3rem 0.5rem;
+        border-radius: 2px;
+        line-height: 1.5;
+    }
+    .EXE_NAV ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .panel {
+        width: 100%;
+        z-index: 0;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-transition: -webkit-transform 0.6s ease-in-out;
+        transition: transform 0.6s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        display: none;
+        height: 100vh;
+        background: black;
+        #button {
+            position: fixed;
+            left: 50%;
+            top: 5%;
+            transform: translate(-50%, -30%);
+            background-color: #fff;
+            color: black;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+        }
+        #button:hover {
+            cursor: pointer;
+            background: #e7e7e7;
+        }
+        #button:active {
+            background-color: #555;
+        }
+        #button.show {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .panel h1 {
+        font-family: sans-serif;
+        font-size: 64px;
+        font-size: 4rem;
+        color: #fff;
+        position: relative;
+        line-height: 200px;
+        top: 33%;
+        text-align: center;
+        margin: 0;
+    }
+    /* Smooth CSS3 Scrolling */
+    a[id="EXE_DIV1"]:target ~ #EXE_MAIN article.panel {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    a[id="EXE_DIV2"]:target ~ #EXE_MAIN article.panel {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+    }
+    a[id="EXE_DIV3"]:target ~ #EXE_MAIN article.panel {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+    }
+}
+@media screen and (min-width: 768px) {
+    #explore_season_page_wrapper {
+        .entry-content {
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    #explore_season_page_wrapper {
+        .spacer {
+            padding: 25%;
         }
     }
 }

@@ -25,9 +25,6 @@ function setCardOffset() {
 }
 
 /******************************************************************/
-window.addEventListener("wheel", function (e) {
-    cardSwitching(e);
-});
 window.addEventListener("keydown", function (e) {
     cardSwitching(e);
 });
@@ -38,9 +35,6 @@ function cardSwitching(e) {
         scrolling = "";
 
     var clickIcon = e.path[0];
-    // if (clickIcon.classList.contains("fa-arrow-alt-circle-down")) {
-    //     console.log("true");
-    // }
 
     /* return when you scroll during the animation of a card */
     if (isMoving) return;
@@ -53,23 +47,23 @@ function cardSwitching(e) {
             parseInt(index.style.zIndex) === CARD_ARRAY.length
         ) {
             /*switch the rearmost card */
-            if (e.deltaY < 0 || e.keyCode === 38 || clickIcon.classList.contains("fa-arrow-alt-circle-up")) {
+            if (e.keyCode === 38 || clickIcon.classList.contains("fa-arrow-alt-circle-up")) {
                 //deltaY < 0 -> scrolling up
                 previousSibling = index.previousElementSibling;
                 if (previousSibling === null) previousSibling = last_element;
             }
 
             animationObject =
-                e.deltaY < 0 || e.keyCode === 38 || clickIcon.classList.contains("fa-arrow-alt-circle-up")
+                e.keyCode === 38 || clickIcon.classList.contains("fa-arrow-alt-circle-up")
                     ? previousSibling
                     : e.deltaY > 0 || e.keyCode === 40 || clickIcon.classList.contains("fa-arrow-alt-circle-down")
                     ? index
                     : "";
             animationObject.style.transform = `translate(0px, -${CARD_SWITCH_RANGE})`;
             scrolling =
-                e.deltaY < 0 || e.keyCode === 38 || clickIcon.classList.contains("fa-arrow-alt-circle-up")
+                e.keyCode === 38 || clickIcon.classList.contains("fa-arrow-alt-circle-up")
                     ? "up"
-                    : e.deltaY > 0 || e.keyCode === 40 || clickIcon.classList.contains("fa-arrow-alt-circle-down")
+                    : e.keyCode === 40 || clickIcon.classList.contains("fa-arrow-alt-circle-down")
                     ? "down"
                     : "";
             isMoving = true;
@@ -106,6 +100,22 @@ function offsetSwitch(scrolling) {
     }
 }
 
+function panelDisplay(e) {
+    var target = e.target;
+    var parent = target.parentNode;
+    var id = parent.getAttribute("href");
+
+    var panels = document.querySelectorAll(".panel");
+    for (var i = 0; i < panels.length; i++) {
+        panels[i].style.display = "none";
+    }
+
+    var matchingId = document.querySelector(id);
+    if (matchingId != null) {
+        matchingId.style.display = "block";
+    }
+}
+
 window.onload = function addStyles() {
     var cardStackPrevious = document.querySelectorAll(".previous");
     for (var i = 0; i < cardStackPrevious.length; i++) {
@@ -125,19 +135,40 @@ window.onload = function addStyles() {
     }
 
     var cardStackNext = document.querySelectorAll(".next");
-    for (var i = 0; i < cardStackNext.length; i++) {
+    for (var x = 0; x < cardStackNext.length; x++) {
         // NEXT CARD TEXT AND FUNCTIONALITY
         var nextText = document.createElement("h6");
         nextText.innerHTML = "Next Card";
         nextText.classList.add("next-card-text");
-        cardStackNext[i].appendChild(nextText);
+        cardStackNext[x].appendChild(nextText);
 
         var nextIcon = document.createElement("div");
         nextIcon.innerHTML = '<i class="far fa-arrow-alt-circle-down"></i>';
-        cardStackNext[i].appendChild(nextIcon);
+        cardStackNext[x].appendChild(nextIcon);
 
-        cardStackNext[i].addEventListener("click", function (e) {
+        cardStackNext[x].addEventListener("click", function (e) {
             cardSwitching(e);
         });
+    }
+
+    var cards = document.querySelectorAll(".card");
+    for (var j = 0; j < cards.length; j++) {
+        var link = cards[j].querySelector("a");
+    }
+    link.onclick = addEventListener(
+        "click",
+        function (e) {
+            panelDisplay(e);
+        },
+        false
+    );
+
+    var panels = document.querySelectorAll(".panel");
+    for (var m = 0; m < panels.length; m++) {
+        var backToTop = document.createElement("a");
+        backToTop.innerHTML = "Back to Season";
+        backToTop.setAttribute("id", "button");
+        backToTop.setAttribute("href", "#explore_season_page_wrapper");
+        panels[m].appendChild(backToTop);
     }
 };
