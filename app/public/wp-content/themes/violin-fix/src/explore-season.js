@@ -163,12 +163,12 @@ window.onload = function addStyles() {
         false
     );
 
-    var panels = document.querySelectorAll(".panel");
+    var panels = document.querySelectorAll(".main");
     for (var m = 0; m < panels.length; m++) {
         var backToTop = document.createElement("a");
         backToTop.innerHTML = "Back to Season";
         backToTop.setAttribute("id", "button");
-        backToTop.setAttribute("href", "#explore_season_page_wrapper");
+        backToTop.setAttribute("href", "#top-of-page");
         panels[m].appendChild(backToTop);
     }
 };

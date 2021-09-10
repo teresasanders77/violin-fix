@@ -126,9 +126,9 @@
     height: 100vh;
     background: black; }
     #explore_season_page_wrapper .panel #button {
-      position: fixed;
+      position: absolute;
       left: 50%;
-      top: 5%;
+      bottom: 0;
       transform: translate(-50%, -30%);
       background-color: #fff;
       color: black;
@@ -143,13 +143,96 @@
     #explore_season_page_wrapper .panel #button.show {
       opacity: 1;
       visibility: visible; }
+    #explore_season_page_wrapper .panel .main {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative; }
+    #explore_season_page_wrapper .panel h1 {
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center; }
+    #explore_season_page_wrapper .panel img {
+      height: auto;
+      max-width: 100%;
+      vertical-align: middle; }
+    #explore_season_page_wrapper .panel .btn {
+      color: #ffffff;
+      padding: 0.8rem;
+      font-size: 14px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      font-weight: 400;
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: transparent; }
+    #explore_season_page_wrapper .panel .btn:hover {
+      background-color: rgba(255, 255, 255, 0.12); }
+    #explore_season_page_wrapper .panel .row-2 {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 15%; }
+    #explore_season_page_wrapper .panel .row-2_item {
+      display: flex;
+      padding: 1rem; }
+    #explore_season_page_wrapper .panel .row-2_content {
+      margin: auto; }
+    @media (min-width: 40rem) {
+      #explore_season_page_wrapper .panel .row-2_item {
+        width: 50%; } }
+    @media (min-width: 56rem) {
+      #explore_season_page_wrapper .panel .row-2_item {
+        width: 33.3333%; } }
+    #explore_season_page_wrapper .panel .row-2-decks {
+      width: 10em;
+      height: 300px;
+      transition: transform 0.3s ease-out;
+      border-radius: 8px;
+      background: black;
+      margin: 10px;
+      border-radius: 5px;
+      transition: 0.5s;
+      box-shadow: 0px 0px 20px gold;
+      transition: 0.3s;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden; }
+      @media (max-height: 400px) {
+        #explore_season_page_wrapper .panel .row-2-decks {
+          height: 40%; } }
+      #explore_season_page_wrapper .panel .row-2-decks h1 {
+        color: Gold;
+        text-align: center; }
+    #explore_season_page_wrapper .panel .row-2_title {
+      color: #ffffff;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      margin: 0px;
+      top: 0;
+      padding: 5%; }
+    #explore_season_page_wrapper .panel .row-2_text {
+      color: #ffffff;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+      font-weight: 400; }
+    #explore_season_page_wrapper .panel .made_by {
+      font-weight: 400;
+      font-size: 13px;
+      margin-top: 35px;
+      text-align: center; }
   #explore_season_page_wrapper .panel h1 {
     font-family: sans-serif;
-    font-size: 64px;
-    font-size: 4rem;
+    font-size: 2.5em;
     color: #fff;
     position: relative;
-    line-height: 200px;
     top: 33%;
     text-align: center;
     margin: 0; }
@@ -171,11 +254,13 @@
 
 @media screen and (min-width: 1200px) {
   #explore_season_page_wrapper .spacer {
-    padding: 25%; } }
+    padding: 25%; }
+  #explore_season_page_wrapper .panel .row-2 {
+    padding-bottom: 5%; } }
 
 body {
   background: black;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 html {
   scroll-behavior: smooth; }

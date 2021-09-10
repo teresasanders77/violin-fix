@@ -13,6 +13,9 @@ function enqueue_explore_season_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_explore_season_scripts' );
 // Retrieve Header for site.
+?>
+<div id="top-of-page"></div>
+<?php
 get_header();
 ?>
 <section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -53,7 +56,53 @@ get_header();
             &nbsp;
         </div>
   <article class="panel" id="EXE_DIV1">
-    <h1> Beethoven</h1>
+    <div class="main">
+    <h1> Beethoven Violin Sonatas</h1>
+    <ul class="row-2">
+        <li class="row-2_item">
+        <div class="row-2-decks">
+            <div class="row-2_content">
+            <h1 class="row-2_title">SONATA 1</h1>
+            </div>
+        </div>
+        </li>
+        <li class="row-2_item">
+        <div class="row-2-decks">
+            <div class="row-2_content">
+            <h1 class="row-2_title">SONATA 2</h1>
+            </div>
+        </div>
+        </li>
+        <li class="row-2_item">
+        <div class="row-2-decks">
+            <div class="row-2_content">
+            <h1 class="row-2_title">SONATA 3</h1>
+            </div>
+        </div>
+        </li>
+        <li class="row-2_item">
+        <div class="row-2-decks">
+            <div class="row-2_content">
+            <h1 class="row-2_title">SONATA 4</h1>
+            </div>
+        </div>
+        </li>
+        <li class="row-2_item">
+        <div class="row-2-decks">
+            <div class="row-2_content">
+            <h1 class="row-2_title">SONATA 5</h1>
+            </div>
+        </div>
+        </li>
+        <li class="row-2_item">
+        <div class="row-2-decks">
+            <div class="row-2_content">
+            <h1 class="row-2_title">SONATA 6</h1>
+            </div>
+        </div>
+        </li>
+    </ul>
+</div>
   </article>
   <article class="panel" id="EXE_DIV2">
     <h1> Test 1 </h1>
