@@ -408,3 +408,49 @@ Stack trace:
 [10-Sep-2021 17:59:06 UTC] PHP  11. _acf_apply_is_local_field_key() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
 [10-Sep-2021 17:59:06 UTC] PHP  12. acf_is_local_field_key() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/local-fields.php:542
 [10-Sep-2021 17:59:06 UTC] PHP  13. ACF_Data->is() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/local-fields.php:456
+[10-Sep-2021 20:41:57 UTC] PHP Warning:  Illegal offset type in isset or empty in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/class-acf-data.php on line 127
+[10-Sep-2021 20:41:57 UTC] PHP Stack trace:
+[10-Sep-2021 20:41:57 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[10-Sep-2021 20:41:57 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[10-Sep-2021 20:41:57 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[10-Sep-2021 20:41:57 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[10-Sep-2021 20:41:57 UTC] PHP   5. have_rows() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:170
+[10-Sep-2021 20:41:57 UTC] PHP   6. get_field_object() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/api/api-template.php:452
+[10-Sep-2021 20:41:57 UTC] PHP   7. acf_maybe_get_field() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/api/api-template.php:117
+[10-Sep-2021 20:41:57 UTC] PHP   8. acf_is_field_key() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/api/api-template.php:165
+[10-Sep-2021 20:41:57 UTC] PHP   9. apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/acf-field-functions.php:197
+[10-Sep-2021 20:41:57 UTC] PHP  10. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:189
+[10-Sep-2021 20:41:57 UTC] PHP  11. _acf_apply_is_local_field_key() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[10-Sep-2021 20:41:57 UTC] PHP  12. acf_is_local_field_key() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/local-fields.php:542
+[10-Sep-2021 20:41:57 UTC] PHP  13. ACF_Data->is() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/local-fields.php:456
+[10-Sep-2021 20:42:30 UTC] PHP Warning:  Illegal offset type in isset or empty in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/class-acf-data.php on line 127
+[10-Sep-2021 20:42:30 UTC] PHP Stack trace:
+[10-Sep-2021 20:42:30 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[10-Sep-2021 20:42:30 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[10-Sep-2021 20:42:30 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[10-Sep-2021 20:42:30 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[10-Sep-2021 20:42:30 UTC] PHP   5. have_rows() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:170
+[10-Sep-2021 20:42:30 UTC] PHP   6. get_field_object() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/api/api-template.php:452
+[10-Sep-2021 20:42:30 UTC] PHP   7. acf_maybe_get_field() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/api/api-template.php:117
+[10-Sep-2021 20:42:30 UTC] PHP   8. acf_is_field_key() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/api/api-template.php:165
+[10-Sep-2021 20:42:30 UTC] PHP   9. apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/acf-field-functions.php:197
+[10-Sep-2021 20:42:30 UTC] PHP  10. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:189
+[10-Sep-2021 20:42:30 UTC] PHP  11. _acf_apply_is_local_field_key() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[10-Sep-2021 20:42:30 UTC] PHP  12. acf_is_local_field_key() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/local-fields.php:542
+[10-Sep-2021 20:42:30 UTC] PHP  13. ACF_Data->is() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/local-fields.php:456
+[10-Sep-2021 20:43:37 UTC] PHP Warning:  Illegal offset type in isset or empty in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/class-acf-data.php on line 127
+[10-Sep-2021 20:43:37 UTC] PHP Stack trace:
+[10-Sep-2021 20:43:37 UTC] PHP   1. {main}() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:0
+[10-Sep-2021 20:43:37 UTC] PHP   2. require() /Users/teresaloafman/Local Sites/violin-fix/app/public/index.php:17
+[10-Sep-2021 20:43:37 UTC] PHP   3. require_once() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-blog-header.php:19
+[10-Sep-2021 20:43:37 UTC] PHP   4. include() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/template-loader.php:106
+[10-Sep-2021 20:43:37 UTC] PHP   5. have_rows() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php:169
+[10-Sep-2021 20:43:37 UTC] PHP   6. get_field_object() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/api/api-template.php:452
+[10-Sep-2021 20:43:37 UTC] PHP   7. acf_maybe_get_field() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/api/api-template.php:117
+[10-Sep-2021 20:43:37 UTC] PHP   8. acf_is_field_key() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/api/api-template.php:165
+[10-Sep-2021 20:43:37 UTC] PHP   9. apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/acf-field-functions.php:197
+[10-Sep-2021 20:43:37 UTC] PHP  10. WP_Hook->apply_filters() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/plugin.php:189
+[10-Sep-2021 20:43:37 UTC] PHP  11. _acf_apply_is_local_field_key() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-includes/class-wp-hook.php:303
+[10-Sep-2021 20:43:37 UTC] PHP  12. acf_is_local_field_key() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/local-fields.php:542
+[10-Sep-2021 20:43:37 UTC] PHP  13. ACF_Data->is() /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/plugins/advanced-custom-fields/includes/local-fields.php:456
+[10-Sep-2021 20:44:14 UTC] PHP Parse error:  syntax error, unexpected '<' in /Users/teresaloafman/Local Sites/violin-fix/app/public/wp-content/themes/violin-fix/page-templates/explore-season.php on line 184

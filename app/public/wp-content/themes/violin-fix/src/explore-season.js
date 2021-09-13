@@ -158,9 +158,12 @@ window.onload = function addStyles() {
     link.onclick = addEventListener(
         "click",
         function (e) {
-            panelDisplay(e);
+            var target = e.target;
+            if (target instanceof HTMLAnchorElement || target.parentElement instanceof HTMLAnchorElement) {
+                panelDisplay(e);
+            }
         },
-        false
+        true
     );
 
     var panels = document.querySelectorAll(".main");
