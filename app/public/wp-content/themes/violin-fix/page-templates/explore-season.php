@@ -100,18 +100,19 @@ add_action( 'wp_enqueue_scripts', 'enqueue_explore_season_scripts' );
                 $sonata_10 = get_sub_field_object('beethoven_violin_sonata_10');
                     $sonata_10_label = $sonata_10['label'];
                     $sonata_10_name = $sonata_10['name'];
+                $class_group_1_label = str_replace(' ', '', $group_1_label);
             endwhile;
         endif; ?>
         <section id="EXE_MAIN">
             <div class="spacer">&nbsp;</div>
             <article class="panel" id="EXE_DIV1">
                 <div class="main">
-                    <h1><?php echo $group_1_label; ?></h1>
+                    <h1 id="<?php echo $class_group_1_label; ?>"><?php echo $group_1_label; ?></h1>
                     <ul class="row-2">
                         <li class="row-2_item">
                             <div class="row-2-decks">
                                 <div class="row-2_content">
-                                <h1 class="row-2_title"><?php echo $sonata_1_label; ?></h1>
+                                <a href="#EXE2_DIV1"><h1 class="row-2_title"><?php echo $sonata_1_label; ?></h1></a>
                                 </div>
                             </div>
                         </li>
@@ -167,7 +168,39 @@ add_action( 'wp_enqueue_scripts', 'enqueue_explore_season_scripts' );
             </article>
         </section>
          <!-------------------------------MOVEMENT CARDS-------------------------------------------------->
-         
+         <section id="EXE_SECONDARY">
+            <div class="spacer">&nbsp;</div>
+            <article class="panel" id="EXE2_DIV1">
+                <div class="main">
+                    <h1>Testing</h1>
+                    <ul class="row-3">
+                        <li class="row-3_item">
+                            <div class="row-3-decks">
+                                <div class="row-3_content">
+                                <h1 class="row-3_title">Testing</h1>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row-3_item">
+                            <div class="row-3-decks">
+                                <div class="row-3_content">
+                                <h1 class="row-3_title">Testing2</h1>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row-3_item">
+                            <div class="row-3-decks">
+                                <div class="row-3_content">
+                                <h1 class="row-3_title">Testing3</h1>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <!-------------------------------SINGLE VIDEO-------------------------------------------------->
+
     </div>
 </section><!-- #post-<?php the_ID(); ?> -->
 

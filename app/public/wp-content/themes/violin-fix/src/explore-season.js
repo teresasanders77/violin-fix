@@ -106,8 +106,10 @@ function panelDisplay(e) {
     var id = parent.getAttribute("href");
 
     var panels = document.querySelectorAll(".panel");
-    for (var i = 0; i < panels.length; i++) {
-        panels[i].style.display = "none";
+    if (target.className != "row-2_title") {
+        for (var i = 0; i < panels.length; i++) {
+            panels[i].style.display = "none";
+        }
     }
 
     var matchingId = document.querySelector(id);
@@ -150,7 +152,6 @@ window.onload = function addStyles() {
             cardSwitching(e);
         });
     }
-
     var cards = document.querySelectorAll(".card");
     for (var j = 0; j < cards.length; j++) {
         var link = cards[j].querySelector("a");
@@ -162,16 +163,70 @@ window.onload = function addStyles() {
             if (target instanceof HTMLAnchorElement || target.parentElement instanceof HTMLAnchorElement) {
                 panelDisplay(e);
             }
+            backButton(e);
         },
         true
     );
 
-    var panels = document.querySelectorAll(".main");
-    for (var m = 0; m < panels.length; m++) {
-        var backToTop = document.createElement("a");
-        backToTop.innerHTML = "Back to Season";
-        backToTop.setAttribute("id", "button");
-        backToTop.setAttribute("href", "#top-of-page");
-        panels[m].appendChild(backToTop);
+    function backButton(e) {
+        var panels = document.querySelectorAll(".main");
+        for (var m = 0; m < panels.length; m++) {
+            if (panels[m].querySelector("#button") == null) {
+                var backToTop = document.createElement("a");
+                backToTop.innerHTML = "BACK TO SEASON";
+                backToTop.setAttribute("id", "button");
+                backToTop.setAttribute("href", "#top-of-page");
+                panels[m].appendChild(backToTop);
+                var button2 = panels[m].querySelectorAll("#button_2");
+                if (button2.length == 0) {
+                    backToTop.classList.add("single-button");
+                }
+            }
+        }
+        var row3 = document.querySelectorAll("ul");
+        for (var x = 0; x < row3.length; x++) {
+            if (row3[x].classList.contains("row-3")) {
+                if (row3[x].querySelector("#button_2") == null) {
+                    var backToLastDiv = document.createElement("a");
+                    backToLastDiv.innerHTML = e.target.innerHTML;
+                    backToLastDiv.setAttribute("id", "button_2");
+                    var backToTitle = document.querySelectorAll("h1");
+                    var matchingTitle;
+                    for (var q = 0; q < backToTitle.length; q++) {
+                        if (backToTitle[q].innerHTML == e.target.innerHTML) {
+                            matchingTitle = backToTitle[q];
+                            var stringCombined = matchingTitle.innerHTML.split(" ").join("");
+                            matchingTitle.setAttribute("id", stringCombined);
+                            // var newMatchingTitle = "#" + stringCombined;
+                            // backToLastDiv.setAttribute("href", newMatchingTitle);
+                        }
+                    }
+                    row3[x].appendChild(backToLastDiv);
+                    var classToggle = row3[x].nextElementSibling;
+                    classToggle.classList.remove("single-button");
+                    backToLastDiv.onclick = () => {
+                        console.log(backToLastDiv);
+                        var toggleDiv = backToLastDiv.id;
+                        var main = document.querySelectorAll(".main");
+                        for (h = 0; h < main.length; h++) {
+                            var findDiv = main[h].querySelector(toggleDiv);
+                            if (findDiv != null) {
+                                console.log(findDiv);
+                                // findDiv.scrollIntoView();
+                                var divParent = findDiv.parentElement.parentElement;
+                                divParent.style.display = "block";
+                            }
+                        }
+                    };
+                }
+            }
+        }
+    }
+
+    var row2Cards = document.querySelectorAll(".row-2_item");
+    for (var k = 0; k < row2Cards.length; k++) {
+        row2Cards[k].addEventListener("click", function (e) {
+            panelDisplay(e);
+        });
     }
 };

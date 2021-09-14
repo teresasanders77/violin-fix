@@ -119,7 +119,7 @@ $fifthCard: #724e94;
         background: black;
         #button {
             position: absolute;
-            left: 50%;
+            left: 40%;
             bottom: 0;
             transform: translate(-50%, -30%);
             background-color: #fff;
@@ -127,6 +127,9 @@ $fifthCard: #724e94;
             padding: 14px 25px;
             text-align: center;
             text-decoration: none;
+            &.single-button {
+                left: 50%;
+            }
         }
         #button:hover {
             cursor: pointer;
@@ -136,6 +139,28 @@ $fifthCard: #724e94;
             background-color: #555;
         }
         #button.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        #button_2 {
+            position: absolute;
+            left: 60%;
+            bottom: 0;
+            transform: translate(-50%, -30%);
+            background-color: #fff;
+            color: black;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+        }
+        #button_2:hover {
+            cursor: pointer;
+            background: #e7e7e7;
+        }
+        #button_2:active {
+            background-color: #555;
+        }
+        #button_2.show {
             opacity: 1;
             visibility: visible;
         }
@@ -175,7 +200,8 @@ $fifthCard: #724e94;
             background-color: rgba(255, 255, 255, 0.12);
         }
 
-        .row-2 {
+        .row-2,
+        .row-3 {
             display: flex;
             flex-wrap: wrap;
             list-style: none;
@@ -184,27 +210,32 @@ $fifthCard: #724e94;
             padding-bottom: 15%;
         }
 
-        .row-2_item {
+        .row-2_item,
+        .row-3_item {
             display: flex;
             padding: 1rem;
         }
-        .row-2_content {
+        .row-2_content,
+        .row-3_content {
             margin: auto;
         }
 
         @media (min-width: 40rem) {
-            .row-2_item {
+            .row-2_item,
+            .row-3_item {
                 width: 50%;
             }
         }
 
         @media (min-width: 56rem) {
-            .row-2_item {
+            .row-2_item,
+            .row-3_item {
                 width: 33.3333%;
             }
         }
 
-        .row-2-decks {
+        .row-2-decks,
+        .row-3-decks {
             width: 10em;
             height: 300px;
             transition: transform 0.3s ease-out;
@@ -233,7 +264,8 @@ $fifthCard: #724e94;
             overflow: hidden;
         }
 
-        .row-2_title {
+        .row-2_title,
+        .row-3_title {
             color: #ffffff;
             font-size: 2rem;
             font-weight: 700;
@@ -244,7 +276,8 @@ $fifthCard: #724e94;
             padding: 5%;
         }
 
-        .row-2_text {
+        .row-2_text,
+        .row-3_text {
             color: #ffffff;
             font-size: 0.875rem;
             line-height: 1.5;
@@ -293,10 +326,11 @@ $fifthCard: #724e94;
 @media screen and (min-width: 1200px) {
     #explore_season_page_wrapper {
         .spacer {
-            padding: 25%;
+            padding: 22%;
         }
         .panel {
-            .row-2 {
+            .row-2,
+            .row-3 {
                 padding-bottom: 5%;
             }
         }
